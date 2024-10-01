@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: radial-gradient(#FFC28B, #fff , #006340 );
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header .logo a{
+    color: rgb(93, 207, 169);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+
+header .nav_links a{
+    text-decoration: none;
+    font-size: 15px;
+    color:rgb(48, 158, 121) ;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+header .logo:hover{
+    font-size: 27px;
+    color:rgb(63, 243, 200) ;
+    text-shadow: rgb(138, 255, 187 )  1px 0 10px;
+}
+
+
+header .nav_links a:hover,
+header i:hover{
+    background-color: rgb(48, 158, 121) ;
+    color:#fff;
+}
+
+header i{
+    color:rgb(255, 255, 255) ;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 50%;
+    margin:5px;
+    padding:13px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.parallax{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+}
+
+#text{
+    position: absolute;
+    font-size: 100px;
+    
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    
+}
+
+.parallax .sun {
+    position: relative;
+    width:40vw;
+    height: 68vh;
+    background: linear-gradient(#FFC28B  15%,#003329);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffa996;
+    box-shadow: #ffd58d  1px 0 50px 20px;
+}
+
+.content{
+    position: relative;
+    background-image: linear-gradient(#003329, #00100b);
+    padding: 100px;
+}
+.content h2{
+    color: #fff;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content p{
+    color: #fff;
+    font-size: large;
+}
